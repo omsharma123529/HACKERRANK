@@ -25,6 +25,3 @@
 | 3 | Time Conversion[cite: 1] | Strings & Logic[cite: 1] | O(1)[cite: 1] | O(1)[cite: 1] |
 | 4 | Compare the Triplets[cite: 1] | Basic Implementation[cite: 1] | O(1)[cite: 1] | O(1)[cite: 1] |
 | 5 | Sparse Arrays[cite: 1] | Hash Maps / Strings[cite: 1] | O(N + Q)[cite: 1] | O(N)[cite: 1] |
-
-## Screenshots & Verification
-*(Upload screenshots of 'Accepted' submissions and earned HackerRank badges to a `screenshots` folder in your repository and embed them here)*[cite: 1]
