@@ -1,17 +1,17 @@
-# Dynamic Array
+# Time Conversion
 
-**Category:** Data Structures / Vectors
+**Category:** Strings & Logic
 
 ## Problem
-Maintain n sequences. Query 1 x y appends y to seq[(x XOR lastAnswer) % n]. Query 2 x y sets lastAnswer = seq[(x XOR lastAnswer) % n][y % size] and records it.
+Convert a 12-hour AM/PM time to 24-hour format.
 
 ## Approach
-List of lists; each query is one XOR, one modulo and one append or index, so every query is constant time.
+Take hour % 12 so 12 becomes 0, add 12 for PM, and keep the minutes and seconds slice unchanged. Handles 12:xx:xxAM -> 00 and 12:xx:xxPM -> 12.
 
 ## Complexity
 | Time | Space |
 | --- | --- |
-| O(N + Q) | O(N + Q) |
+| O(1) | O(1) |
 
 ## Run
 ```bash

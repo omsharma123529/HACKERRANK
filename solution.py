@@ -1,20 +1,10 @@
-def dynamicArray(n, queries):
-    """Process type 1 / type 2 queries on n sequences; return the answers of type 2 queries."""
-    seqs = [[] for _ in range(n)]
-    last_answer = 0
-    answers = []
-    for q, x, y in queries:
-        idx = (x ^ last_answer) % n
-        if q == 1:
-            seqs[idx].append(y)
-        else:
-            seq = seqs[idx]
-            last_answer = seq[y % len(seq)]
-            answers.append(last_answer)
-    return answers
+def timeConversion(s):
+    """Convert 12-hour hh:mm:ssAM/PM to 24-hour hh:mm:ss."""
+    hour = int(s[:2]) % 12          # 12 -> 0, so 12AM = 00 and 12PM = 12 after the shift below
+    if s[-2:] == "PM":
+        hour += 12
+    return f"{hour:02d}{s[2:8]}"
 
 
 if __name__ == "__main__":
-    n, q = map(int, input().split())
-    queries = [list(map(int, input().split())) for _ in range(q)]
-    print(*dynamicArray(n, queries), sep="\n")
+    print(timeConversion(input().strip()))
