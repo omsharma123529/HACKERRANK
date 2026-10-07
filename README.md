@@ -1,19 +1,30 @@
-# Sparse Arrays
+# Portfolio Building: HackerRank Algorithmic Problem-Solving
 
-**Category:** Hash Maps / Strings
+**Activity 8: HackerRank Algorithmic Problem-Solving & Portfolio Integration**[cite: 1]
 
-## Problem
-For each query string, report how many times it appears in the list of input strings.
+## Student Profile
+* **Full Name:** Om Sharma
+* **Roll Number:** R25EJ093
+* **College / University:** REVA UNIVERSITY
+* **Branch:** CSIT
+* **Semester / Section:** 3rd Semester, Section B
+* **GitHub Profile:** [omsharma123529](https://github.com/omsharma123529)
 
-## Approach
-Build a frequency map (Counter) once, then answer each query with a dictionary lookup instead of rescanning the list, which avoids O(N x Q).
+## HackerRank Verification
+* **HackerRank Username:** @omsharms0
+* **HackerRank Profile URL:** [https://www.hackerrank.com/profile/omsharms0](https://www.hackerrank.com/profile/omsharms0)
+* **Milestone Badge:** Problem Solving (3-Star Minimum Requirement)[cite: 1]
+* **Current Star Rating:** [Insert Current Rating Here]
 
-## Complexity
-| Time | Space |
-| --- | --- |
-| O(N + Q) | O(N) |
+## Problem Solutions & Complexity Analysis
 
-## Run
-```bash
-python solution.py   # reads input in HackerRank format from stdin
-```
+| # | Problem Name | Topic / Category | Target Time | Target Space |
+|---|---|---|---|---|
+| 1 | Diagonal Difference[cite: 1] | 2D Arrays / Matrices[cite: 1] | O(N)[cite: 1] | O(1)[cite: 1] |
+| 2 | Dynamic Array[cite: 1] | Data Structures / Vectors[cite: 1] | O(N + Q)[cite: 1] | O(N)[cite: 1] |
+| 3 | Time Conversion[cite: 1] | Strings & Logic[cite: 1] | O(1)[cite: 1] | O(1)[cite: 1] |
+| 4 | Compare the Triplets[cite: 1] | Basic Implementation[cite: 1] | O(1)[cite: 1] | O(1)[cite: 1] |
+| 5 | Sparse Arrays[cite: 1] | Hash Maps / Strings[cite: 1] | O(N + Q)[cite: 1] | O(N)[cite: 1] |
+
+## Screenshots & Verification
+*(Upload screenshots of 'Accepted' submissions and earned HackerRank badges to a `screenshots` folder in your repository and embed them here)*[cite: 1]
