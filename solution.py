@@ -1,10 +1,11 @@
-def timeConversion(s):
-    """Convert 12-hour hh:mm:ssAM/PM to 24-hour hh:mm:ss."""
-    hour = int(s[:2]) % 12          # 12 -> 0, so 12AM = 00 and 12PM = 12 after the shift below
-    if s[-2:] == "PM":
-        hour += 12
-    return f"{hour:02d}{s[2:8]}"
+def compareTriplets(a, b):
+    """Return [Alice's points, Bob's points] comparing the triplets element-wise."""
+    alice = sum(x > y for x, y in zip(a, b))
+    bob = sum(x < y for x, y in zip(a, b))
+    return [alice, bob]
 
 
 if __name__ == "__main__":
-    print(timeConversion(input().strip()))
+    a = list(map(int, input().rstrip().split()))
+    b = list(map(int, input().rstrip().split()))
+    print(*compareTriplets(a, b))

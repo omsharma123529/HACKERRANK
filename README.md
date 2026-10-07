@@ -1,12 +1,12 @@
-# Time Conversion
+# Compare the Triplets
 
-**Category:** Strings & Logic
+**Category:** Basic Implementation
 
 ## Problem
-Convert a 12-hour AM/PM time to 24-hour format.
+Alice and Bob each have a rating triplet. Award a point to whoever has the higher value at each position (none on a tie).
 
 ## Approach
-Take hour % 12 so 12 becomes 0, add 12 for PM, and keep the minutes and seconds slice unchanged. Handles 12:xx:xxAM -> 00 and 12:xx:xxPM -> 12.
+Zip the triplets and count strict greater-than and less-than comparisons.
 
 ## Complexity
 | Time | Space |
