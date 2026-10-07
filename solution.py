@@ -1,11 +1,15 @@
-def compareTriplets(a, b):
-    """Return [Alice's points, Bob's points] comparing the triplets element-wise."""
-    alice = sum(x > y for x, y in zip(a, b))
-    bob = sum(x < y for x, y in zip(a, b))
-    return [alice, bob]
+from collections import Counter
+
+
+def matchingStrings(strings, queries):
+    """For each query, count how many times it occurs in strings."""
+    freq = Counter(strings)
+    return [freq[q] for q in queries]
 
 
 if __name__ == "__main__":
-    a = list(map(int, input().rstrip().split()))
-    b = list(map(int, input().rstrip().split()))
-    print(*compareTriplets(a, b))
+    n = int(input())
+    strings = [input().strip() for _ in range(n)]
+    q = int(input())
+    queries = [input().strip() for _ in range(q)]
+    print(*matchingStrings(strings, queries), sep="\n")

@@ -1,17 +1,17 @@
-# Compare the Triplets
+# Sparse Arrays
 
-**Category:** Basic Implementation
+**Category:** Hash Maps / Strings
 
 ## Problem
-Alice and Bob each have a rating triplet. Award a point to whoever has the higher value at each position (none on a tie).
+For each query string, report how many times it appears in the list of input strings.
 
 ## Approach
-Zip the triplets and count strict greater-than and less-than comparisons.
+Build a frequency map (Counter) once, then answer each query with a dictionary lookup instead of rescanning the list, which avoids O(N x Q).
 
 ## Complexity
 | Time | Space |
 | --- | --- |
-| O(1) | O(1) |
+| O(N + Q) | O(N) |
 
 ## Run
 ```bash
